@@ -133,7 +133,6 @@ body{
     flex-direction: column;
     background-image: linear-gradient(rgba(0,0,0,0.60)
     ,rgba(0,0,0,0.60)),url(/MaguaWilliam/images/dark.jpg);
-    /* background-image: url('/MaguaWilliam/images/dark.jpg'); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -165,23 +164,57 @@ body{
     color: whitesmoke;
     text-decoration: none;
 }
-
+.sector{
+    color: whitesmoke;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.sector h1{
+    font-size: 8vw;
+    margin-top: 50px;
+    line-height: 50px;
+}
+.sector p{
+    margin: 10px auto;
+    font-size: 6vw;
+}
+.options-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px auto;
+}
+.btn{
+    width: 200px;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 4px 0;
+    border: 3px solid slategray;
+    background: transparent;
+    color: greenyellow;
+    border-radius: 50px;
+    padding: 5px 0;
+    cursor: pointer;
+}
 footer{
     margin-top: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 1.3rem;
+    height: 1.4rem;
     font-size: 0.8rem;
     background: whitesmoke;
 }
 
 
-@media only screen and (max-width: 425px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     body{
         background-image: linear-gradient(rgba(0,0,0,0.65)
         ,rgba(0,0,0,0.65)),url(/MaguaWilliam/images/dark.jpg);
-        /* background-image: url('/MaguaWilliam/images/dark.jpg'); */
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -189,13 +222,9 @@ footer{
     .master{
         padding: 0.7rem;
     }
-    /* .burger-btn{} */
-    /* .profile{} */
-    /* .navbar{} */
     .navbar a{
         display: none;
     }
-    /* footer{} */
 }
 /* Mobile devices in landscape mode */
 /* @media only screen and (min-width: 768px) and (max-width: 991px) { } */
@@ -204,7 +233,6 @@ footer{
     body{
         background-image: linear-gradient(rgba(0,0,0,0.65)
         ,rgba(0,0,0,0.65)),url(/MaguaWilliam/images/work.jpg);
-        /* background-image: url('/MaguaWilliam/images/work.jpg'); */
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -217,10 +245,13 @@ footer{
         cursor: pointer;
         display: none;
     }
-    /* .navbar{} */
     .navbar a{
         display: block;
         }
+        .sector{}
+        .sector h1{}
+        .sector h2{}
+        .options-btn{}
     footer{
         height: 2rem;
         font-size: 1.2rem;
@@ -250,6 +281,10 @@ footer{
     .navbar a{
     display: block;
     }
+    .sector{}
+    .sector h1{}
+    .sector h2{}
+    .options-btn{}
     footer{
         height: 3rem;
         font-size: 1.5rem;
@@ -276,6 +311,10 @@ footer{
     .navbar a{
     display: block;
     }
+    .sector{}
+    .sector h1{}
+    .sector h2{}
+    .options-btn{}
     footer{
     height: 3rem;
     font-size: 1.5rem;
